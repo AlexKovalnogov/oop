@@ -23,8 +23,6 @@ public class Director extends Client {
 
     }
 
-
-
     public void increaseSalaryForEmployees(){
 
     }
