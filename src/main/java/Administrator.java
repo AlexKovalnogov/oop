@@ -15,18 +15,17 @@ public class Administrator extends Client {
         System.out.println("Administrator-getListOfClients");
     }
 
-    private void isApplianceRepairable() {
-       /* Appliance appliances = new Appliance();
-        appliances.checkApplianceDateOfBuying();
-        appliances.checkConditionOfAppliance();
-        appliances.checkAppliancePrice();*/
+    public void isApplianceRepairable(Appliance appliance) {
+        appliance.checkApplianceDateOfBuying();
+        appliance.checkConditionOfAppliance();
+        appliance.checkAppliancePrice();
         System.out.println("Administrator-Aprroved tha appliance is repairable  ");
-        //    giveApplianceIntoRepair();
+
     }
 
     public void giveApplianceIntoRepair() {
         System.out.println("Administrator are checkeng  appliance:");
-        isApplianceRepairable();
+      //  isApplianceRepairable();
         System.out.println("Administrator-giveApplianceIntoRepair for Serviceman");
         new Serviceman().repairAppliance();
     }

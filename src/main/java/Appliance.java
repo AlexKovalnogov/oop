@@ -1,24 +1,30 @@
+
+import org.apache.log4j.Logger;
+
 public class Appliance {
 
     private double price;
     private String applianceID;
     private String dateOfBuying;
 
- public Appliance(double price, String applianceID, String dateOfBuying) {
-     this.price = price;
-     this.applianceID = applianceID;
-     this.dateOfBuying = dateOfBuying;
- }
+    Logger logger = Logger.getLogger(Appliance.class);
+
+    public Appliance(double price, String applianceID, String dateOfBuying) {
+        this.price = price;
+        this.applianceID = applianceID;
+        this.dateOfBuying = dateOfBuying;
+    }
 
     public void checkConditionOfAppliance() {
-        System.out.println("Condition is checked");
+
+        logger.info("Condition is checked");
     }
 
     public void checkApplianceDateOfBuying() {
-        System.out.println("Date Of Buying is checked");
+        logger.info("Date Of Buying is checked");
     }
 
     public void checkAppliancePrice() {
-        System.out.println("Price is checked");
+        logger.info("Price is checked");
     }
 }
