@@ -7,9 +7,9 @@ public class Client implements Goods{
     public String clientId;
 
 
-    public void giveApplianceIntoRepair() {
+    public void giveApplianceIntoRepair(Appliances appliances,Administrator administrator) {
         System.out.println("Client giveApplianceIntoRepair into Service centre");
-        new Administrator().giveApplianceIntoRepair();
+       // new Administrator().giveApplianceIntoRepair();
     }
 
       public void getApplianceFromRepair(){

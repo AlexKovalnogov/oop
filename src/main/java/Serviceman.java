@@ -9,5 +9,4 @@ public class Serviceman extends Client {
         new Administrator().getApplianceFromRepair();
     }
 
-
 }

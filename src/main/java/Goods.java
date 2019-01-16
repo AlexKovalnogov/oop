@@ -1,5 +1,5 @@
 public interface Goods {
-    void giveApplianceIntoRepair();
+    void giveApplianceIntoRepair(Appliances appliances,Administrator administrator);
     void getApplianceFromRepair();
 
 }
