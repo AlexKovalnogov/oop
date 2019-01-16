@@ -9,7 +9,7 @@ public class Client implements Goods{
 
     public void giveApplianceIntoRepair(Appliances appliances,Administrator administrator) {
         System.out.println("Client giveApplianceIntoRepair into Service centre");
-       // new Administrator().giveApplianceIntoRepair();
+
     }
 
       public void getApplianceFromRepair(){

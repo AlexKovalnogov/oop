@@ -7,6 +7,7 @@ public class Main {
         scanner.nextInt();*/
 
         Client client = new Client();
+
         client.giveApplianceIntoRepair();
 
     }
