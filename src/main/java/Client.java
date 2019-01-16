@@ -2,11 +2,16 @@ import org.apache.log4j.Logger;
 
 
 
-public class Client implements Goods{
+public class Client implements Goods
+{
 
     public String clientName;
     public String clientSurname;
     public String clientId;
+
+    public Client(){
+
+    }
 
     public Client(String clientName, String clientSurname, String clientId) {
         this.clientName = clientName;

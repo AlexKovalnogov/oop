@@ -1,11 +1,10 @@
 public class Administrator extends Client {
 
-    public Administrator()
-    {}
+    public Administrator() {
+    }
 
-    public Administrator(String administratorName,String administratorSurname,String administratorId )
-    {
-        super(administratorName,administratorSurname,administratorId );
+    public Administrator(String administratorName, String administratorSurname, String administratorId) {
+        super(administratorName, administratorSurname, administratorId);
     }
 
     private void getListOfClients() {
@@ -17,10 +16,10 @@ public class Administrator extends Client {
     }
 
     private void isApplianceRepairable() {
-        Appliance appliances = new Appliance();
+       /* Appliance appliances = new Appliance();
         appliances.checkApplianceDateOfBuying();
         appliances.checkConditionOfAppliance();
-        appliances.checkAppliancePrice();
+        appliances.checkAppliancePrice();*/
         System.out.println("Administrator-Aprroved tha appliance is repairable  ");
         //    giveApplianceIntoRepair();
     }
