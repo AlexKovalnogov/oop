@@ -2,7 +2,7 @@ import org.apache.log4j.Logger;
 
 
 
-public class Client implements Goods
+public class Client //implements Goods
 {
 
     public String clientName;

@@ -1,5 +1,7 @@
-public class Administrator extends Client {
+import org.apache.log4j.Logger;
 
+public class Administrator extends Client {
+Logger  logger=Logger.getLogger(Administrator.class);
     public Administrator() {
     }
 
@@ -8,30 +10,30 @@ public class Administrator extends Client {
     }
 
     private void getListOfClients() {
-        System.out.print("Administrator-getListOfClients");
+        logger.info("Administrator-getListOfClients");
     }
 
     private void getReportAboutRepairedApplianceForWeek() {
-        System.out.println("Administrator-getListOfClients");
+        logger.info("Administrator-getListOfClients");
     }
 
     public void isApplianceRepairable(Appliance appliance) {
         appliance.checkApplianceDateOfBuying();
         appliance.checkConditionOfAppliance();
         appliance.checkAppliancePrice();
-        System.out.println("Administrator-Aprroved tha appliance is repairable  ");
+        logger.info("Administrator-Aprroved tha appliance is repairable  ");
 
     }
 
     public void giveApplianceIntoRepair() {
-        System.out.println("Administrator are checkeng  appliance:");
+        logger.info("Administrator are checkeng  appliance:");
       //  isApplianceRepairable();
-        System.out.println("Administrator-giveApplianceIntoRepair for Serviceman");
+        logger.info("Administrator-giveApplianceIntoRepair for Serviceman");
         new Serviceman().repairAppliance();
     }
 
     public void getApplianceFromRepair(Client client) {
-        System.out.println("Administrator getApplianceFromRepair to  Client");
+        logger.info("Administrator getApplianceFromRepair to  Client");
         //new Client().getApplianceFromRepair();
     }
 

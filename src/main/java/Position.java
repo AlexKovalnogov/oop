@@ -1,6 +1,6 @@
 public enum Position {
     DIRECTOR,
-    ADMIM,
+    ADMIN,
     CLIENT,
     SERVICEMAN
 }
