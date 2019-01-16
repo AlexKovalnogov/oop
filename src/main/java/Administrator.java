@@ -25,7 +25,7 @@ public class Administrator extends Client {
     }
 
     public void getApplianceFromRepair() {
-        System.out.println(" Administrator getApplianceFromRepair to  Client");
+        System.out.println("Administrator getApplianceFromRepair to  Client");
         new Client().getApplianceFromRepair();
     }
 
