@@ -1,4 +1,6 @@
-import java.security.PublicKey;
+import org.apache.log4j.Logger;
+
+
 
 public class Client implements Goods{
 
@@ -6,14 +8,20 @@ public class Client implements Goods{
     public String clientSurname;
     public String clientId;
 
+    public Client(String clientName, String clientSurname, String clientId) {
+        this.clientName = clientName;
+        this.clientSurname = clientSurname;
+        this.clientId = clientId;
+    }
 
-    public void giveApplianceIntoRepair(Appliances appliances,Administrator administrator) {
-        System.out.println("Client giveApplianceIntoRepair into Service centre");
+    Logger logger=Logger.getLogger(Client.class);
+    public void giveApplianceIntoRepair(Appliance appliances, Administrator administrator) {
+        logger.info("Client giveApplianceIntoRepair into Service centre");
 
     }
 
       public void getApplianceFromRepair(){
-        System.out.println("Client getApplianceFromRepair from Service centre");
+          logger.info("Client getApplianceFromRepair from Service centre");
 
     }
 

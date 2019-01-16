@@ -6,9 +6,8 @@ public class Main {
     /*    Scanner scanner = new Scanner(System.in);
         scanner.nextInt();*/
 
-        Client client = new Client();
-
-        client.giveApplianceIntoRepair();
+      Client client = new Client();
+        client.giveApplianceIntoRepair(new Appliance(24.5,"coffemachene","24/12.15",new Administrator());
 
     }
 }

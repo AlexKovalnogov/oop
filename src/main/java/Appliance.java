@@ -1,14 +1,14 @@
-public class Appliances {
+public class Appliance {
 
-    public double price;
-    public String applianceID;
-    public String dateOfBuying;
+    private double price;
+    private String applianceID;
+    private String dateOfBuying;
 
-  /*  public Appliances(double price, String applianceID, String dateOfBuying) {
-        this.price = price;
-        this.applianceID = applianceID;
-        this.dateOfBuying = dateOfBuying;
-    }*/
+ public Appliance(double price, String applianceID, String dateOfBuying) {
+     this.price = price;
+     this.applianceID = applianceID;
+     this.dateOfBuying = dateOfBuying;
+ }
 
     public void checkConditionOfAppliance() {
         System.out.println("Condition is checked");
@@ -21,6 +21,4 @@ public class Appliances {
     public void checkAppliancePrice() {
         System.out.println("Price is checked");
     }
-
-
 }
