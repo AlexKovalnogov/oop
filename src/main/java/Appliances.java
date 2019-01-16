@@ -1,17 +1,25 @@
 public class Appliances {
 
     public double price;
-    public String aplianceID;
-    public String dateOfBuying ;
+    public String applianceID;
+    public String dateOfBuying;
 
-    public void checkCondition(){
+  /*  public Appliances(double price, String applianceID, String dateOfBuying) {
+        this.price = price;
+        this.applianceID = applianceID;
+        this.dateOfBuying = dateOfBuying;
+    }*/
 
+    public void checkConditionOfAppliance() {
+        System.out.println("Condition is checked");
     }
-    public void checkDateOfBuying(){
 
+    public void checkApplianceDateOfBuying() {
+        System.out.println("Date Of Buying is checked");
     }
-    public void checkPrice(){
 
+    public void checkAppliancePrice() {
+        System.out.println("Price is checked");
     }
 
 
