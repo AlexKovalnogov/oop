@@ -1,4 +1,4 @@
-public enum Position {
+public enum StuffPosition {
     DIRECTOR,
     ADMIN,
     CLIENT,
